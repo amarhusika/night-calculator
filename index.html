@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="themes.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <title>
+      Night calculator
+    </title>
+    <meta
+      name="description"
+      content="Calculate the last third of the night by entering the time for Maghrib and Fajr. One of the easiest ways if you want to pray tahajjud or qiyam al layl or want to make dua in the last third of the night. Calculate the Islamic midnight because Isha prayer must be prayed before midnight."
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input">
+        <h2 class="maghribtext">Sunset time</h2>
+        <input
+          class="maghribinput"
+          type="time"
+          id="maghrib"
+          name="maghrib"
+          required
+        />
+        <h2 class="fajrtext">Dawn time</h2>
+        <input class="fajrinput" type="time" id="fajr" name="fajr" required />
+        <input
+          class="calculate"
+          id="calculate"
+          type="button"
+          value="Calculate"
+        />
+      </div>
+      <div class="results" id="results">
+        <h2 class="midnighttext">Midnight starts</h2>
+        <p class="midnight" id="midnight">0</p>
+        <h2 class="thirdtext">Last third of night starts</h2>
+        <p class="third" id="third">0</p>
+        </button>
+      </div>
+    </div>
+    <div class="overlay hidden">
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"
+      integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>

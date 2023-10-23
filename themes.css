@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  min-height: 100%;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100%;
+  color: whitesmoke;
+  background-image: linear-gradient(to top left, #778899 0%,  #778899 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+.input,
+.results,
+.jamilabab {
+  background-color: #13274F;
+  height: 12em;
+  backdrop-filter: blur(3em);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5em;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.maghribtext,
+.fajrtext {
+  position: relative;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  margin: 0em;
+  margin-bottom: 2px;
+}
+
+.maghribinput,
+.fajrinput {
+  align-content: center;
+  font-size: 1em;
+}
+
+.calculate,
+.disclaimer {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 0.5em;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 10%);
+  margin: 1em;
+  outline: none;
+}
+
+.disclaimer {
+  font-size: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+  visibility: hidden;
+}
+
+.thirdtext,
+.midnighttext {
+  position: relative;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.third,
+.midnight {
+  position: relative;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  visibility: hidden;
+  margin: 0em;
+}
+
+.jamilabablogo {
+  height: 8.5em;
+  position: relative;
+}
+
+.jamilababtext {
+  position: relative;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  box-sizing: border-box; 
+  position: fixed;
+  overflow-y: scroll;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  padding: 3em;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .input,
+  .results,
+  .jamilabab {
+    height: 18em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .maghribtext,
+  .fajrtext {
+    font-size: 2em;
+    margin-bottom: 2px;
+  }
+  .maghribinput,
+  .fajrinput {
+    position: relative;
+    font-size: 1.5em;
+  }
+  .calculate {
+    font-size: 1.5em;
+  }
+  .thirdtext,
+  .midnighttext {
+    font-size: 2em;
+  }
+  .third,
+  .midnight {
+    font-size: 2em;
+  }
+  .disclaimer {
+    font-size: 1em;
+  }
+  .jamilabablogo {
+    height: 12.5em;
+  }
+  .jamilababtext {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 1px;
+  }
+  .modal {
+    left: 20vw;
+    width: 60vw;
+    font-size: 1.5em;
+  }
+}
