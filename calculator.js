@@ -26,14 +26,18 @@ let calculateTimes = () => {
       "Are you sure you have entered the times for sunset and dawn correctly? Try again."
     );
   } else {
+    // Date for sunset and dawn is the same 
+    // Example: sunset 01:00, dawn 05:00
     maghrib = dayjs(`2000-01-01 ${document.getElementById("maghrib").value}`);
      fajr = dayjs(`2000-01-01 ${document.getElementById("fajr").value}`);
     difference = fajr.diff(maghrib);
     if(difference<0)
-  {
+    {
+    // Date for sunset and dawn is not the same 
+    // Example: sunset 19:00, dawn 05:00
     fajr = dayjs(`2000-01-02 ${document.getElementById("fajr").value}`);
     difference = fajr.diff(maghrib);
-  }
+    }
 
     thirdOfTheDifference = difference / 3;
     halfOfTheDifference = difference / 2;
